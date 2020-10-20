@@ -1,0 +1,69 @@
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   flex: 0.35;
+   height: 100vh;   
+   border-right: var(--brd);
+   color: white;
+}
+
+.sidebar-header {
+    display: flex;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+}
+
+.sidebar-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.sidebar-search-input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;    
+    flex: 1;
+}
+
+.sidebar-button {
+    color: white !important;
+}
+
+.sidebar-threads {
+    overflow: scroll;
+    flex: 1;
+}
+
+.sidebar-threads::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sidebar-threads {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+    
+.sidebar-footer {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(190, 190, 190, 0.75);
+}
+
+.sidebar-footer-avatar {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.sidebar-footer .MuiSvgIcon-root:hover {
+    color: rgba(2, 150, 190, 1) !important;
+}

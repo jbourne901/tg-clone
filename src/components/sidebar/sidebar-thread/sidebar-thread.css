@@ -1,0 +1,30 @@
+.sidebar-thread {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(190,190,190, 0.1);
+  cursor: pointer;
+}
+
+.sidebar-thread:hover {
+  /*background-color: rgba(2, 150, 199);*/
+  background-color: #1d4671;
+}
+
+.sidebar-thread-active {
+  background-color: rgba(2, 150, 199);
+}
+
+.sidebar-thread-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.sidebar-thread-ts {
+  font-size: small;
+  white-space: nowrap;;
+  padding-left: 20px;
+}

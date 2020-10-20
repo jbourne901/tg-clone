@@ -1,0 +1,77 @@
+.thread {
+    display: flex;
+    flex-direction: column;    
+    flex: 0.65;
+    height: 100vh;
+} 
+
+.thread-header {
+    display: flex;    
+    flex: 0;
+    border-bottom: var(--brd);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.thread-info {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.thread-detail-button {
+    color: white;
+}
+.thread-detail-button:hover {
+    color: rgba(1,150,199, 1) !important;
+}
+
+.thread-last-seen {
+    font-weight: 500;
+    color: gray;
+}
+
+.thread-messages {
+    flex: 1;
+    overflow: scroll;
+}
+
+.thread-messages::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .thread-messages {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  
+.thread-button {
+    /*display: none;*/
+    color: white !important;
+}
+
+.thread-button:hover .MuiSvgIcon-root {
+    color: rgb(2,150,199);
+}
+
+.thread-form {
+    display: flex;  
+    padding: 10px; 
+    border-top: 1px solid rgba(190, 190, 190, 0.75);
+}
+
+.thread-message-input {
+    flex: 0.9;    
+    padding: 5px;
+    width: 98%;
+    outline-width: 0 !important;
+    border: none;
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: gray;
+}
